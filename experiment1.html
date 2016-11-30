@@ -1,0 +1,191 @@
+<html>
+<style>
+body {
+    background-color: GREY;
+}
+
+h1 {
+    color: b;lack
+    text-align: center;
+}
+
+h3
+
+{
+text-shadow: 5px 5px 5px #FF0000;
+}
+
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+h1 {color:black;}
+
+<title> Experiment 1 </title>
+
+img {
+    width:100%;
+}
+
+
+</style>
+<style>
+
+.popshadow{
+position: relative;
+left: -3px; /* offset depth */
+top: -3px; /* offset depth */
+box-shadow: 5px 5px 5px rgba(0,0,0,0.3); /* shadow x offset, y offset, intensity, and color rgba(red, green, blue, opacity (0-1)) */
+transition: all .2s ease-in-out; /* 0.2s = transition duration */
+}
+
+.popshadow:active{
+left: 0;
+top: 0;
+box-shadow: none;
+}
+
+</style>
+
+</head>
+
+<center>
+<span class="header">Text Box Ticker</span>
+<br>
+<script language="JavaScript">
+
+
+
+document.write('<form name="qiksearch_ticker"><input type="text" class="TextBoxTicker" onfocus="goURL();this.blur();" name="qiksearch_ticker" size="55"></form>');
+
+var count=0;
+var ticker_speed=2;
+ 
+ // Ticker messages
+ var ticker_msg = new Array(
+     "Welcome to Qiksearch",
+     "Stock Exchange",
+     "Times Of India!",
+     "Economic Times" ); // No comma after last ticker msg
+
+ // Ticker URLs
+ var ticker_url = new Array(
+     "http://www.qiksearch.com",
+     "http://www.money.rediff.com/",
+     "http://epaperbeta.timesofindia.com/",
+     "http://www.http://economictimes.indiatimes.com/" ); // No comma after last ticker url
+
+function TextBoxTicker()
+{
+ if(count<ticker_msg.length)
+ {  
+  this.document.qiksearch_ticker.qiksearch_ticker.value=ticker_msg[count];
+  count++;
+  if(count==ticker_msg.length)
+  {
+   count=0;
+  }
+  setTimeout("TextBoxTicker();",ticker_speed*1000);
+ }
+}
+
+function goURL()
+{
+ if(this.document.qiksearch_ticker.qiksearch_ticker.value==ticker_msg[ticker_msg.length-1])
+ {
+  location.href=ticker_url[ticker_msg.length-1];
+ }
+ else
+ {
+  location.href=ticker_url[count-1];
+ }
+}
+
+TextBoxTicker();
+
+</script>
+
+
+<a href="http://www.qiksearch.com" class="link"></a>
+</font>
+</td></tr></table>
+
+</center>
+
+<left><img src="logo.jpg" align="left" height=100 width=100></img></left>
+<h1><center> WELCOME TO INDIAN RAILWAYS! </center></h1>
+<br>
+<br>
+<br>
+
+<marquee behavior="scroll" direction="left">
+<img src="railway.jpg" alt="station" width="600" height="300"></img>
+<img src="railway2.jpg" alt="station1" width="600" height="300"></img>
+<img src="railway3.jpg" alt="station2" width="600" height="300"></img>
+</marquee>
+
+
+<center> <p> India has some of the most spectacular and unforgetable  rail journey in the world. Here yoou experience a simple way to find out everything you need to know in one place. 
+There is no better way to enjoy india's outback, cities, coastal towns and reginal areas in comfort.</p>
+<br>
+<u><b>IMPORTANCE OF RAILWAYS:</b></u>
+<br>
+<p>Indian Railway provides the most important mode of  public transport in India. This is the most commonly used and cost effective long distance transport system of the country.
+Indian Railway is operating by Ministry of Railways. Indian Railways is touching life of almost every people across India covering 28 states and 3 Union Territories with its 40,050 miles or 64,460 kilometers.
+</p>
+<br>
+<br>
+
+For enquiry on different trains available according to your convinence , you can visit on:
+<br>
+<br>
+<text align="center">
+<a href="Train_Enquiry.html"><img src="rail1.jpg" align="center" height="230" width="190"alt="Enquiry Department"class="popshadow">
+<br>
+<h3>Enquiry Department</h3>
+</a> 
+<br>
+<br>
+<br>
+For booking tickets online, if you are an existing user then please login:
+<br>
+<br>
+<br>
+<br>
+<text align="center">
+<a href="login.html"><img src="Existing.jpg" align="center" height="230" width="190" alt="Existing User"class="popshadow">
+<br>
+<h3> Existing User </h3>
+</a>
+<br>
+<br>
+<br>
+
+For booking tickets online, if you are a new user then please Sign Up:
+<br>
+<br>
+<br>
+<br>
+<text align="center">
+<a href="Signup.html"><img src="new.jpg" align="center" height="230" width="190"alt="New User" class="popshadow">
+<br>
+<h3> New User </h3>
+</a>
+<br>
+<br>
+
+ For any other information regarding PNR status , seat availablity etc connect link provided:
+
+
+<script language="javascript">
+<!--
+document.write("<a href=\"http://www.indianrail.gov.in/\">");
+
+document.write("Indian Railways");
+document.write("</a>");
+//-->
+
+</script>
+</body>
+</html>          

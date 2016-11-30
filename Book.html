@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Book</title>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  
+  <script>
+  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+</script>
+<script>
+
+function changeColor(color)
+{
+document.getElementById('x').style.color=color;
+}
+
+  </script>
+
+
+</head>
+<body bgcolor="grey">
+<form tag="Train Booking Details">
+<div align="center">
+<div style="box-sizing: border-box; display: inline-block; width: auto; max-width: 480px; background-color: #FFFFFF; border: 2px solid #0361A8; border-radius: 5px; box-shadow: 0px 0px 8px #0361A8; margin: 50px auto auto;">
+<div style="background: #0361A8; border-radius: 5px 5px 0px 0px; padding: 15px;"><span style="font-family: verdana,arial; color: #D4D4D4; font-size: 1.00em; font-weight:bold;">Train Booking Details</span></div>
+	<div style="background: ; padding: 15px">
+	<style type="text/css" scoped>
+	td { text-align:left; font-family: verdana,arial; color: #064073; font-size: 1.00em; }
+	input { border: 1px solid #CCCCCC; border-radius: 5px; color: #666666; display: inline-block; font-size: 1.00em;  padding: 5px; width: 100%; }
+	
+</div>
+</style>
+
+<br>
+<br>
+
+<h1><b><center> ENTER THE BOOKIN DETAILS! </center></b></h1>
+<br>
+<br>
+<body>
+<form>
+First Name*:
+<table width="100%"><tr>
+<td bgcolor="red" onmouseover="changeColor('red')"> </td>
+<td bgcolor="blue" onmouseover="changeColor('blue')"> </td>
+<td bgcolor="green" onmouseover="changeColor('green')"> </td>
+</tr></table>
+<input id='x'type="text" name="name">
+<br>
+<br>
+Last Name*:
+<input type="text" name="last name">
+<br>
+<br>
+
+Gender*:
+<script language="JavaScript">
+    function function1() {
+        myCheckbox.focus(); 
+        myCheckbox.click();
+    }
+</script>
+<input type="checkbox" name="Gender" value="Male">Male <br>
+<input type="checkbox" name="Gender" value="Female">Female<br>
+
+
+<br>
+<br>
+Berth Preference:
+<select>
+<option> No Prefence </option>
+<option> Lower Berth </option>
+<option> Middle Berth </option>
+<option> upper Berth<option>
+</select>
+<br>
+<br>
+Senior Citizen*:
+<select>
+<option> Yes </option>
+<option> No </option>
+</select>
+<br>
+<br>
+
+Date Of journey*:
+  
+ 
+  <input id="datepicker" />
+   
+<br>
+<br>
+<br>
+Train Source Stn*:
+<select>
+<option ="text"> </option>
+<option> Dadar </option>
+<option> New Delhi </option>
+<option> Kashmir </option>
+<option> Kerela </option>
+</select>
+<br>
+<br>
+Train Desination Stn*:
+<select>
+<option ="text"> </option>
+<option> Dadar </option>
+<option> New Delhi </option>
+<option> Kashmir </option>
+<option> Kerela </option>
+</select>
+<br>
+<br>
+</body>
+<a href="Confirm.html">
+<button type="button" onclick="Confirm "> Confirm </button>
+</a>
+<br>
+<br>
+<button type="button" onClick="EXPT1">Back</button>
+<br>
+<br>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Date();
+</script>
+
+</form>
+</html>

@@ -1,0 +1,67 @@
+<html>
+
+<head>
+<style>
+
+<h1>{color:blue;}
+ <title> Login </title>
+</style>
+</head>
+
+<body bgcolor="grey">
+
+
+
+	<form tag="Login">
+<div align="center">
+<div style="box-sizing: border-box; display: inline-block; width: auto; max-width: 480px; background-color: #FFFFFF; border: 2px solid #0361A8; border-radius: 5px; box-shadow: 0px 0px 8px #0361A8; margin: 50px auto auto;">
+<div style="background: #0361A8; border-radius: 5px 5px 0px 0px; padding: 15px;"><span style="font-family: verdana,arial; color: #D4D4D4; font-size: 1.00em; font-weight:bold;"> USER LOGIN</span></div>
+	<div style="background: ; padding: 15px">
+	<style type="text/css" scoped>
+	td { text-align:left; font-family: verdana,arial; color: #064073; font-size: 1.00em; }
+	input { border: 1px solid #CCCCCC; border-radius: 5px; color: #666666; display: inline-block; font-size: 1.00em;  padding: 5px; width: 100%; }
+	
+</div>
+</style>
+ </h1>
+<form name="login">
+Username<input type="text" name="userid"/>
+<br>
+<br>
+<br>
+Password<input type="password" name="pswrd"/>
+<br>
+<br>
+
+<input type="button" onclick="check(this.form)" value="Login"/>
+<br>
+<br>
+
+<input type="reset" value="Cancel"/>
+<br>
+</form>
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "ria" && form.pswrd.value == "ria")
+  {
+    window.open('book.html')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+<p> Problem regarding login? Visit the link below
+
+<a href="http://www.indianrail.gov.in/">
+<img src="google.jpg" align="center" height="100" width="100"alt="google help" class="popshadow"onmouseover="shakeleft()"
+onmouseout="stoptimer()" width="100" height="100" />
+</img>
+</a>
+
+</body>
+</html>
+ 
